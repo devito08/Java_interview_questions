@@ -1,16 +1,17 @@
+import java.util.Scanner;
 
-public class factor {
-    static int factorial(int X) {
-       int ans = 1;
-       for (int i = 1; i <= X; i++) {
-          ans = ans * i;
-       }
-       return ans;
-    }
-    public static void main(String[] args) {
- 
-       int X = 5;
-       int result = factorial(X);
-       System.out.println("The factorial of " + X + " is " + result);
-    }
- }   
+public class factor{
+   static int factorial(int x){
+      int ans=1;
+      for(int i=1;i<=x;i++){
+         ans*=i;
+      }
+      return ans;
+   }
+   public static void main(String[]args){
+      Scanner sc=new Scanner(System.in);
+      int x=sc.nextInt();
+      int result=factorial(x);
+      System.out.println(result);
+   }
+}
