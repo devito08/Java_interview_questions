@@ -1,5 +1,5 @@
 
-public class Main {
+public class factor {
     static int factorial(int X) {
        int ans = 1;
        for (int i = 1; i <= X; i++) {
